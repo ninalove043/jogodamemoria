@@ -1,0 +1,67 @@
+/* body {
+    background: url('https://i.pinimg.com/originals/07/a6/3c/07a63c5149fc0a7239600973654e4612.gif') center;
+    background-size: cover;
+} */
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://www.icegif.com/wp-content/uploads/2022/11/icegif-162.gif') center;
+    background-size: cover;
+}
+
+.login-form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.125rem;
+    
+}
+
+.login__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.125rem;
+}
+
+.login__header img {
+    width: 6.25rem;
+    border-radius: 50%;
+}
+
+.login__header h1 {
+    color: rgba(128, 0, 128, 0.727);
+    font-size: 1.5em;
+}
+
+.login__input {
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 15px;
+    color: #333;
+    font-size: 1em;
+    margin-bottom: .9375rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login__button {
+    background: #af5cee;
+    padding: .9375rem;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.login__button:disabled {
+    background: #787777;
+    cursor: auto;
+}
+

@@ -1,0 +1,100 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: url('https://wallpapers.com/images/hd/half-demon-nezuko-aesthetic-8f4twdsrzk2mlloo.jpg') center;
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: all 800ms ease;
+    transform-style: preserve-3d;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid #d21bcc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 2500ms ease;
+}
+
+.front {
+    /* background: url('../images/beth.png') center;  */
+    background-position: center;
+    background-size: cover;
+    transform: rotatey(180deg);
+    background-color: rgb(231, 144, 159);
+}
+
+.back {
+    background: url('https://steamuserimages-a.akamaihd.net/ugc/4105585931633037605/A029FC348D413C98CA756F1D805173F8C97D037F/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false') top;
+    background-size: 100% 100%;
+    backface-visibility: hidden;
+
+
+}
+
+/* .card:hover  {
+    transform: rotatey(180deg);
+} */
+.revel-card {
+    transform: rotatey(180deg);
+
+}
+
+.disabled-card {
+    filter: grayscale(100%);
+    /* opacity: 0.5; */
+}
+
+
+@media (min-width:768px) {
+    .card {
+        width: 76%;
+    }
+
+}
+
+
+@media (min-width:1200px) {
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+}
